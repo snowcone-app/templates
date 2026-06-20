@@ -1,0 +1,16 @@
+{
+  "name": "@snowcone-app/example-get-started-quickstart",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The /get-started quickstart's SDK snippet, compiled against the published @snowcone-app/sdk. A CI-gated guard so the documented catalog field paths (product.options.combinations, product.mockups, product.placements) and the mint-response shape can't silently drift from the shipped types.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@snowcone-app/sdk": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

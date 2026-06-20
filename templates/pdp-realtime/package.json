@@ -1,0 +1,25 @@
+{
+  "name": "@snowcone-app/example-pdp-realtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Live-mockup PDP built on the @snowcone-app/canvas/embed primitives (RealtimeEmbed + RealtimeCanvas + RealtimeMockup): one declarative tree, a single design() source of truth, a bring-your-own-control input bound by layer name, and a live mockup that updates as you type. A CI-gated, cloneable reference for the ADR-0079 server-side render pipeline.",
+  "scripts": {
+    "dev": "next dev --port 9210 --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start -p 9210",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@snowcone-app/canvas": "latest",
+    "@snowcone-app/sdk": "latest",
+    "next": "15.4.8",
+    "react": "^19.1.2",
+    "react-dom": "^19.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
