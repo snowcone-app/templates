@@ -17,7 +17,7 @@ import { getDemoShopId } from "./demo-shop";
  *                                      as a placement or a mockupId)
  *
  * `mockupId` and `placement` are DIFFERENT namespaces: a mockupId is an opaque
- * scene code (e.g. "FV1qjO"); a placement is a print-area name (e.g. "Front").
+ * scene code (e.g. "947QAD"); a placement is a print-area name (e.g. "Front").
  * Never pass one where the other is expected.
  */
 
@@ -48,7 +48,7 @@ export type PdpConfig = {
   height: number;
 };
 
-const DEFAULT_PRODUCT_ID = "BEEB77";
+const DEFAULT_PRODUCT_ID = "BC43BE";
 
 function firstString(value: unknown): string | undefined {
   return typeof value === "string" && value.length > 0 ? value : undefined;

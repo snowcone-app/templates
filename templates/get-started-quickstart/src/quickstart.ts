@@ -29,12 +29,12 @@ const SAMPLE_ASSET = "https://dqMwU8Jct3.storage.snowcone.app/demo/demo-008.jpg"
 export async function showProductInfo(code: string) {
   const product = await getProduct(code); // by id or slug
 
-  const name = product.name; // "Framed Canvas"
+  const name = product.name; // "iPhone 17 Pro Max Case"
   const price = product.price; // minor units (cents) — suggested retail
   const description = product.description; // string[] — paragraphs
 
   // Fields a realtime render needs:
-  const firstMockupId = product.mockups?.[0]?.id; // "FV1qjO" (a mockupId)
+  const firstMockupId = product.mockups?.[0]?.id; // "947QAD" (a mockupId)
   const placementLabels = product.placements?.map((p) => p.label); // ["Front"]
 
   // The variant id lives under options.combinations — this is the line the
@@ -100,7 +100,7 @@ export async function mintSandboxShop(
 // The minted `shop_id` is publishable (like Stripe's pk_) — it's the only thing
 // the render URL needs. Render the sample asset right away.
 export function useMintedShop(mint: MintShopResponse, asset = SAMPLE_ASSET): string {
-  return renderUrl("BEEB77", mint.shop_id, asset);
+  return renderUrl("BC43BE", mint.shop_id, asset);
 }
 
 // ── (Optional) Step 3: "Upload your own art" ─────────────────────────────────
@@ -147,7 +147,7 @@ export async function uploadOwnArt(
     throw new Error(`upload PUT failed: ${putRes.status}`);
   }
 
-  // 3. Classify the upload, then render it: renderUrl("BEEB77", shop_id, publicUrl).
+  // 3. Classify the upload, then render it: renderUrl("BC43BE", shop_id, publicUrl).
   await fetch(`${base}/snowcone/upload/classify`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },

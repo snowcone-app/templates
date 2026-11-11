@@ -43,7 +43,7 @@ const d = design({ name: "Front", width: 1480, height: 2328 })
 <RealtimeEmbed
   shop={shop}              {/* resolved server-side: minted sandbox shop, or your own */}
   grantUrl="/api/realtime/grant"
-  product={{ productId: "BEEB77", mockupIds: ["FV1qjO"], placements: ["Front"] }}
+  product={{ productId: "BC43BE", mockupIds: ["947QAD"], placements: ["Front"] }}
   design={d}
 >
   <RealtimeCanvas>
@@ -111,7 +111,7 @@ crossed is the #1 silent-failure trap:
 
 | Catalog field                      | `product` field                             | Namespace |
 |-----------------------------------|---------------------------------------------|-----------|
-| `product.mockups[].id`            | `mockupIds` (`string[]`)                     | scene code, e.g. `FV1qjO` |
+| `product.mockups[].id`            | `mockupIds` (`string[]`)                     | scene code, e.g. `947QAD` |
 | `product.placements[].label`      | `placements[]` — **and the `design` artboard `name`** | print-area name, e.g. `Front` |
 | `product.options.combinations[].variantId` | `variantId`                        | gvid for the chosen variant |
 | `product.mockups[].gvids[]`       | _(internal gvid namespace — not passed here)_ | gvid |
